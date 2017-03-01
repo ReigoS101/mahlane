@@ -1,0 +1,160 @@
+<template>
+	Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @rosulg
+ Sign out
+ Watch 0
+  Star 0
+  Fork 1 rosulg/photoflat
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathphotoflat/photoflat/event.html
+72b9dda  2 days ago
+@markussomp markussomp Add files via upload
+1 contributor
+RawBlameHistory     
+144 lines (122 sloc)  5.99 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Photoflat</title>
+
+    <!-- Bootstrap Core CSS saddddddddddddddddddddddddddddasdsadsadasdsadasdasdasdsadasd-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/4-col-portfolio.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/boxes.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    
+    <script>
+        function collapseNavbar() {
+    if ($(".navbar").offset().top > 50) {
+        $(".navbar-fixed-top").addClass("top-nav-collapse");
+    } else {
+        $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        }
+    }
+    $(window).scroll(collapseNavbar);
+    $(document).ready(collapseNavbar);
+    // jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function() {
+        $('a.page-scroll').bind('click', function(event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $(this).closest('.collapse').collapse('toggle');
+    });
+    </script>
+
+
+    </head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    
+    
+       <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menüü <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light"></span><img class="img-responsive logo" src="pics/photoFlat.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!--<li>
+                        <a class="page-scroll smallcolor" href="#Terapeudid">Terapeudid</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#Kinesioloogia">Registeeru</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll smallcolor" href="#kontakt">Logi sisse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- photograph job add section -->
+    <section id="adds">
+        <div class="container">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="conctact_pic">
+                            <img src="http://placehold.it/700x300" class="img-responsive center-block">
+                        </div>
+                        <div class="info">
+                            <h5 class="text-center contact_info">23.02.17 Pulm Fotograafi Login Loginovich 533258137</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor solutaLorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas aperiam debitis dolor soluta</p>
+                            <p><h5 class="text-center contact_info">Viimased hinnapakkumised</h5></p>
+                            <p>Ahto Jalakas pakkus hinnaks 500$</p>
+                            <p>Ahto Malakas pakkus hinnaks 600$</p>
+                            <p>Mari Mops pakkus hinnaks 300$</p>
+                            <p>Muri Jeesus pakkus hinnaks 200$</p>
+                            <form method="post">
+                                Paku hind: <input type="text" name="hind">
+                            </form><br>
+                            <a href="" class="btn">Kinnita pakkumine</a>
+                            <a href="" class="btn">Tagasi</a>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; photoFlat 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    <!-- /.container -->
+    
+    </section>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/style.js"></script>
+
+</body>
+
+</html>
+</template>

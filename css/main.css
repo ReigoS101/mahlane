@@ -1,0 +1,172 @@
+html { 
+}
+
+.portfolio-item:hover {
+    box-shadow: 5px #6E4D9B;
+}
+
+.discription {
+    margin-top: 20px;
+}
+
+.img-responsive-parent {
+}
+
+.logo {
+    display: block;
+    top: 500px;
+    padding: 0px 0px;
+    margin: 0px;
+    width: 200px;
+}
+
+.contact_info {
+    text-transform: uppercase;
+    border-bottom: solid 1px #6E4D9B;
+}
+
+.contact_pic {
+    max-width: 350px;
+    max-height: 150px;
+}
+
+span { color: #6E4D9B}
+
+
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid #6E4D9B;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar-custom .navbar-toggle {
+  color: #6E4D9B;
+  background-color: rgba(white);
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom a {
+  color: #6E4D9B;
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 1);
+  outline: none;
+  background-color: rgb(52, 152, 219);
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: hotpink;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(46, 204, 113, 1);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+
+@media (max-width 768px) {
+    li {
+        color: hotpink;
+    }
+}
+
+
+@media (min-width: 768px) {
+  .navbar-custom {
+      padding: 0px;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: yellow;  
+    background: -webkit-linear-gradient(right, white , rgb(215, 219, 221)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, white , rgb(215, 219, 221 )); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, white , rgb(215, 219, 221)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, white , rgb(215, 219, 221 )); /* Standard syntax (must be last) */
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      border-bottom: solid 1px #6E4D9B;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: white;
+    color: #6E4D9B;
+    border-bottom: 1px #6E4D9B;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-custom {
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: white;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      border-bottom: solid 1px #6E4D9B;
+
+    border-bottom: none;
+    letter-spacing: 1px;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: rgb(142, 68, 173);
+    border-bottom: 1px solid #6E4D9B;
+  }
+}
+
+
+.navbar-personal {
+    background-color: rgba(52, 152, 219, 0.5);
+    border-color: #080808;
+    border-radius: 0px;
+    /*background: url("leaves.jpg")*/
+}
+
+/* Firefox old*/
+@-moz-keyframes blink {
+    from {box-shadow: 0px 0px 5px 5px #6E4D9B;}
+    to {box-shadow : none;}
+}
+ 
+@-webkit-keyframes blink {
+    from {box-shadow: 0px 0px 5px 5px #6E4D9B;}
+    to {box-shadow : none;}
+    }
+/* IE */
+@-ms-keyframes blink {
+    from {box-shadow: 0px 0px 5px 5px #6E4D9B;}
+    to {box-shadow : none;}
+
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    from {box-shadow: 0px 0px 5px 5px #6E4D9B;}
+    to {box-shadow : none;}
+} 
+
+.blink{
+    -moz-animation: blink normal 0.7s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 0.7s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 0.7s infinite ease-in-out; /* IE */
+    animation: blink normal 0.7s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+
