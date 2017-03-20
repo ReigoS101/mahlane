@@ -1,4 +1,4 @@
-  <template>
+<template>
   <!DOCTYPE html>
   <html lang="en">
 
@@ -88,74 +88,74 @@
   <section id="createEvent">
     <div class="container box">
       <div class="row">
-          <div class="col-xs-12 col-lg-6">
-            <form id="eventform" method="post" action="http://localhost:9000/createEvent">
+          <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6">
               <div class="conctact_pic">
-                  <img id="eventpicture" src="http://placehold.it/350x150" class="img-responsive center-block">
-              </div>
-              <div class="info">
+                <img src="pics/vali_pilt_moodus.jpg" class="img-responsive center-block" id="eventpicture">
+            </div>
+            <div class="info">
                 <div class="form-group">
-                  <label for="form_email" style="float: left">Kontaktisik</label>
-                  <input value.bind="eventData.email" id="form_email" type="email" name="email" class="form-control" placeholder="Sisesta email *" required="required" data-error="Sisestage email.">
-                  <div class="help-block with-errors"></div>
+                    <label for="form_email" style="float: left">Kontaktisik</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Sisesta email *" required="required" data-error="Sisestage email.">
+                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
-                  <label for="form_place" style="float: left">Toimumiskoht</label>
-                  <input value.bind="eventData.place" id="form_place" type="text" name="place" class="form-control" placeholder="Sisesta toimumiskoht *" required="required" data-error="Sisestage toimumiskoht.">
-                  <div class="help-block with-errors"></div>
+                    <label for="form_place" style="float: left">Toimumiskoht</label>
+                    <input id="form_place" type="text" name="place" class="form-control" placeholder="Sisesta toimumiskoht *" required="required" data-error="Sisestage toimumiskoht.">
+                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="col-xs-12">
                   <div class="row">
-                    <div class="form-group col-xs-6" style="margin-bottom: 0px;">
-                      <label for="form_beginDate" style="float: left;margin-bottom:0px; text-align: center;margin-left: 30%;">Alguskuupäev</label><br>
-                      <input style="width: 70%;margin-left: 15%;" value.bind="eventData.beginDate" id="form_beginDate" type="date" name="beginDate" class="form-control" required="required" data-error="Sisestage alguskuupäev.">
-                      <div class="help-block with-errors"></div>
+                     <div class="form-group col-xs-6" style="margin-bottom: 0px;">
+                        <label for="form_beginDate" style="float: left;margin-bottom:0px; text-align: center;">Alguskuupäev</label><br>
+                        <input style="width: 70%;" id="form_beginDate" type="date" name="beginDate" class="form-control" required="required" data-error="Sisestage alguskuupäev.">
+                        <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group col-xs-6" style="margin-bottom: 0px;">
                       <label for="form_endDate" style="float: left;margin-bottom:0px; text-align: center;margin-left: 30%;">Lõppkuupäev</label><br>
-                      <input style="width: 70%;margin-left: 15%;" value.bind="eventData.endDate" id="form_endDate" type="date" name="endDate" class="form-control" required="required" data-error="Sisestage lõppkuupäev.">
+                      <input style="width: 70%;margin-left: 15%;" id="form_endDate" type="date" name="endDate" class="form-control" required="required" data-error="Sisestage lõppkuupäev.">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <label for="form_eventName" style="float: left">Ürituse nimi</label>
-                  <input value.bind="eventData.eventName" id="form_eventName" type="text" name="eventName" class="form-control" placeholder="Sisesta ürituse nimi *" required="required" data-error="Sisestage ürituse nimi.">
-                  <div class="help-block with-errors"></div>
+                    <label for="form_eventName" style="float: left">Ürituse nimi</label>
+                    <input id="form_eventName" type="text" name="eventName" class="form-control" placeholder="Sisesta ürituse nimi *" required="required" data-error="Sisestage ürituse nimi.">
+                    <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">
-                  <label for="form_message" style="float: left">Kirjuta üritusest</label>
-                  <textarea value.bind="eventData.message" id="form_message" name="message" class="form-control" placeholder="Kirjuta *" rows="4" required="required" data-error="Palun kirjeldage üritust ."></textarea>
-                  <div class="help-block with-errors"></div>
-                  <input type="submit" class="btn btn-success btn-send" value="Loo üritus">
+                        <label for="form_message" style="float: left">Kirjuta üritusest</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Kirjuta *" rows="4" required="required" data-error="Palun kirjeldage üritust ."></textarea>
+                        <div class="help-block with-errors"></div>
+                        <input type="submit" class="btn btn-success btn-send" value="Loo üritus">
                 </div>
-              </div>
-            </form>
+            </div>
           </div>
-          <div class="col-xs-12 col-lg-6">
+          <div class="col-xs-12 col-lg-6 col-md-6 col-sm-6">
             <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 ">
               <div class="col-xs-6 portfolio-item choosePic">
-                <img click.delegate="chooseEventPicture('pics/funeral.jpg')" class="img-responsive" src="../pics/funeral.jpg"  id="funeral" alt="" style="margin-top:5%">
+                  <img click.delegate="chooseEventPicture('pics/abielu_moodus.jpg')" class="img-responsive" src="../pics/abielu_moodus.jpg" alt="">
               </div>
               <div class="col-xs-6 portfolio-item choosePic">
-                <img click.delegate="chooseEventPicture('pics/wedding.jpg')" class="img-responsive" src="pics/wedding.jpg" alt="" id="wedding" style="margin-top:5%">
+                  <img click.delegate="chooseEventPicture('pics/autopilt_moodus.jpg')" class="img-responsive" src="pics/autopilt_moodus.jpg" alt="">
               </div>
               <div class="col-xs-6 portfolio-item choosePic">
-                <img click.delegate="chooseEventPicture('pics/bday.jpg')" class="img-responsive" src="pics/bday.jpg"  id="bday" alt="">
+                  <img click.delegate="chooseEventPicture('pics/sunnipaev_moodus.jpg')" class="img-responsive" src="pics/sunnipaev_moodus.jpg" alt="">
               </div>
-              <div class="col-xs-6 portfolio-item choosePic">
-                <img click.delegate="chooseEventPicture('pics/party.jpg')" class="img-responsive" src="pics/party.jpg" id="party" alt="">
+              <div click.delegate="chooseEventPicture('pics/pidu_moodus.jpg')" class="col-xs-6 portfolio-item choosePic">
+                  <img class="img-responsive" src="pics/pidu_moodus.jpg" alt="">
+              </div>                 
+              <div click.delegate="chooseEventPicture('pics/stuudio_moodus.jpg')" class="col-xs-6 portfolio-item choosePic">
+                  <img class="img-responsive" src="pics/stuudio_moodus.jpg" alt="">
               </div>
-              <div class="col-xs-6 portfolio-item choosePic">
-                <img click.delegate="chooseEventPicture('pics/varia.jpg')" class="img-responsive" src="pics/varia.jpg" id="varia" alt="" style="height:158px">
-              </div>
-              <div class="col-xs-6 portfolio-item choosePic">
-                <img click.delegate="chooseEventPicture('pics/photoshoot.jpg')" class="img-responsive" src="pics/photoshoot.jpg" id="photoshoot" alt="" style="height:158px; width:237.5px">
+              <div click.delegate="chooseEventPicture('pics/varia_moodus.jpg')" class="col-xs-6 portfolio-item choosePic">
+                  <img class="img-responsive" src="pics/varia_moodus.jpg" alt="">
+              </div> 
+               
             </div>
             </div>
         </div>
-          </div>
+
       </div>
       <footer>
         <div class="row" style="margin-left: 0px;margin-right: 0px;">
